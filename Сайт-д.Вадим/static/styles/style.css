@@ -1,0 +1,425 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    height: inherit;
+    line-height: 1;
+}
+
+
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.logo {
+    height: 80px ;
+}
+
+
+
+[class*='__container'] {
+    max-width: 1758px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+/* PC */
+@media (max-width: 1758px){
+    [class*="__container"]{
+        max-width: 1300px;
+    }
+}
+
+/* TABLET */ 
+
+@media (max-width: 991.98px) {
+    [clss*="__container"] {
+        max-width: 750px;
+    }
+}
+
+/*MOBILE*/
+@media (max-width: 767.98px){
+    [class*="__container"] {
+        max-width: none;
+    }
+}
+
+
+.header__menu {
+    flex: 1 1 auto;
+}
+
+.header__adres {
+    flex: 0 0 368px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+@media (max-width: 991.98px) {
+    .header__adres {
+        flex: 0 0 168px;
+    }
+
+    .menu__list > a{
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .menu__body {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        padding: 90px 15px 30px 15px;
+        transition: left 0.4s ease 0s;
+    }
+
+    .menu__item{
+       
+        margin: 0px 0px 25px 0px;
+    }
+
+    .menu__body:target{
+        left: 0;
+    }
+
+    .menu__link {
+        color: aqua;
+        font-size: 20px;
+    }
+    .menu__list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .header__adres {
+        margin-right: 40px;
+    }
+    
+}  
+
+.header {
+    height: 130px;
+    background-image: url(Rectangle\ 44.png);
+    background-color: rgb(18, 17, 17);
+}
+
+@media (max-width:548px) {
+    .logo {
+        width: 120%;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px 0px 0px;
+}
+
+.header__container {
+    display: flex;
+    min-height: 145px;
+    align-items: center;
+     
+}
+
+.header_logo{
+    position: relative;
+    z-index: 50;
+
+}
+
+.menu__list {
+    display: flex;
+    gap: 30px;
+}
+
+.menu__link {
+    color: #EAB512;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.35;
+    -webkit-text-stroke: 1px #FFFF;
+    text-transform: uppercase;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+.header__adres {
+    text-align: center;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    border-bottom: solid;
+    border-color: #EAB512;
+
+
+} 
+
+.text {
+    color: #EAB512;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.35;
+    -webkit-text-stroke: 0.8px #FFFF;
+    text-transform: uppercase;
+}
+
+/*------------------------------ */
+.icon-menu {
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+
+
+
+    .icon-menu {
+        position: relative;
+        flex: 0 0 30px;
+        height: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 20px;
+
+    }
+
+    .icon-menu::before,
+    .icon-menu::after {
+        content: "";
+        background-color: #EAB512;
+        height: 2px;
+    }
+
+    .icon-menu span {
+        height: 2px;
+        background-color: #EAB512;
+    }
+
+    
+}
+
+/*---------main----------*/
+
+.block-text__title {
+    color: white;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 53.2px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 63.84px;
+    letter-spacing: 2.66px;
+}
+
+
+
+.main {
+    background-image: url(Rectangle1.png);
+}
+
+.get-started {
+    padding: 150px 0px 50px 0px;
+}
+
+.get-started__container {
+    display: flex;
+}
+
+.get-started__content {
+    flex: 0 1 48%;
+    padding-right: 20px;
+}
+
+
+
+button {
+    width: 352px;
+    color: #FFF;
+    text-align: center;
+    font-family: Philosopher;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 1.33px;
+    background-color: #EAB512;
+    padding: 10px;
+    border-radius: 17px;
+
+}
+
+h3 {
+    color: #FFF;
+    text-align: center;
+    text-align: center;
+    font-family: Times New Roman;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.92px; 
+    letter-spacing: 1.4px;
+    margin-bottom: 85px;
+    margin-top: 80px;
+}
+
+.get-started__image {
+    margin-top: 40px;
+    flex: 0 1 52%
+} 
+
+.get-started__block-text {
+    max-width: 410px;
+    
+  
+}
+
+.card {
+    width: 90%;
+}
+
+.cards-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.get-started__image > img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.padd {
+    margin-left: 3.5%;
+}
+
+.get-started__block-text > a{
+    margin-left: 32px;
+}
+
+.section-1 {
+    padding-bottom: 20px;
+}
+
+.section-2 {
+    background-image: url(Rectangle\ 45.png);
+}
+
+.img-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 300px);
+}
+
+.card-2 {
+    width: 80%;
+    height: 80%;
+}
+
+.padd-2 {
+    margin-left: 7%;
+    margin-right: 1.7%;
+    margin-top: 5%;
+}
+
+.footer {
+    height: 145px;
+    display: flex;
+    justify-content: center;
+}
+
+a > button {
+    margin-left: -3%;
+    margin-bottom: 20%;
+}
+
+.name-contacts > a {
+    color: #000;
+    text-align: center;
+    font-family: Times New Roman;
+    font-size: calc(20px + 10 * (100vw / 1920));
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; 
+    letter-spacing: 1.756px;
+    margin-left: 2%;
+}
+
+.contact-holder-1 > img {
+    width: 10%;
+    height: 10%;
+}
+
+.contact-holder-2 > img {
+    width: 10%;
+    height: 10%;
+    margin-top: 2%;
+}
+
+.contact-holder-3 > img {
+    width: 10%;
+    height: 10%;
+    margin-top: 2%;
+}
+
+.padd-3 {
+    margin-top: 3%;
+}
